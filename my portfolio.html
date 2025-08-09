@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sanjay Kumar | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9f9;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #007bff;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 28px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
+    section {
+      padding: 60px 40px;
+    }
+
+    .hero {
+      background: url('https://picsum.photos/1600/400') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .hero h2 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      background: white;
+      color: #007bff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      border: 2px solid #fff;
+    }
+
+    .btn:hover {
+      background: #007bff;
+      color: white;
+      border: 2px solid white;
+    }
+
+    h3 {
+      margin-bottom: 20px;
+      color: #007bff;
+      border-bottom: 2px solid #007bff;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .about p {
+      max-width: 800px;
+      margin-top: 10px;
+    }
+
+    .skills ul {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      margin-top: 20px;
+      gap: 15px;
+    }
+
+    .skills li {
+      background: #e0e0e0;
+      padding: 10px 15px;
+      border-radius: 5px;
+    }
+
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .project {
+      background: white;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      padding: 20px;
+      flex: 1 1 300px;
+    }
+
+    .project h4 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .contact label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    .contact input, .contact textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .contact button {
+      margin-top: 20px;
+      background: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #007bff;
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      .projects {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Sanjay Kumar</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h2>Hi, I'm Sanjay Kumar</h2>
+    <p>Full Stack Developer | Problem Solver | Tech Enthusiast</p>
+    <a href="resume.pdf" class="btn" download>Download Resume</a>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about">
+    <h3>About Me</h3>
+    <p>I am a passionate full stack developer with a strong foundation in web technologies including HTML, CSS, JavaScript, and backend frameworks like Node.js and Python. I love building responsive and functional web applications that solve real-world problems.</p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="skills">
+    <h3>Skills</h3>
+    <ul>
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>JavaScript</li>
+      <li>React</li>
+      <li>Node.js</li>
+      <li>Python</li>
+      <li>SQL</li>
+      <li>MongoDB</li>
+      <li>Git & GitHub</li>
+    </ul>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h3>Projects</h3>
+    <div class="projects">
+      <div class="project">
+        <h4>Smart Library System</h4>
+        <p>A Python and SQL-based project for managing library book issues, returns, and fine calculation.</p>
+      </div>
+      <div class="project">
+        <h4>Online Portfolio</h4>
+        <p>Responsive personal website built using HTML, CSS, and JavaScript to showcase my projects and resume.</p>
+      </div>
+      <div class="project">
+        <h4>E-Commerce Website</h4>
+        <p>Frontend React app integrated with Firebase backend and payment gateway using Razorpay API.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h3>Contact Me</h3>
+    <form action="#">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" required>
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" required>
+
+      <label for="message">Your Message</label>
+      <textarea id="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Sanjay Kumar | Portfolio Website
+  </footer>
+
+</body>
+</html>
